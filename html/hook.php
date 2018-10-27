@@ -2,7 +2,7 @@
 
 // 設定
 $LOG_FILE = dirname(/home/git/webserver).'/hook.log';
-$SECRET_KEY = 'hoge';　//githubで設定するsecretもところ
+$SECRET_KEY = test;　//githubで設定するsecretもところ
 
 $header = getallheaders();
 $hmac = hash_hmac('sha1', $HTTP_RAW_POST_DATA, $SECRET_KEY);
