@@ -9,21 +9,27 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>本気で実用的なスマートホーム作りに挑む</title>
     <style>
-      *{font-size:100%;margin:0px;padding:0px;}
-      body{font-family:"ＭＳ Ｐゴシック",sans-serif;}
-      #header{height:30px;}
+      *{font-size:100%;margin:0px;}
+      html{height:100%;}
+      body{font-family:"ＭＳ Ｐゴシック",sans-serif;height:100%;}
+      #header{width:100%;height:30px;top:0px;position:fixed;box-shadow:0px 2px 4px gray;}
       #header ul{text-align:right;}
       #header ul li{display:inline;text-align:right;margin-right:20px;}
-      #top{height:550px;margin:10px;background-color:#dcdcdc;box-shadow:0px 2px 4px gray;}
+      #top{height:90%;margin:40px;background-color:#dcdcdc;box-shadow:0px 2px 4px gray;}
       #top h1{padding-top:150px;text-align:center;font-size:250%;}
       #top p{padding-top:10px;text-align:center;font-size:100%;}
       #newtopic{height:550px;margin:10px;height:150px;background-color:#f5f5f5;padding:10px;margin-top:10px;box-shadow:0px 2px 4px gray;}
-      #newtopic h1{font-size:100%;margin:0px;}
-      #list{width:50%; margin-left:0px}
+      #newtopic h1{font-size:100%}
+      #main{display:flex;}
+      #select{height:100px;border:solid 5px #cccccc;}
       @media screen and (max-width: 480px){
-        #list{width:70%; margin-left:auto;margin-right:auto}
+        #select{width:90%;border:solid 5px #cccccc;}
+        #list{width:90%; margin-left:auto;margin-right:auto:}
       }
-      #list #mokuji{font-size:50%;}
+      @media screen and (min-width: 480px){
+        #select{position: -webkit-sticky;position: sticky;top:40px;width:30%;justify-content: center;order:1;margin-left:5%;}
+        #list{width:50%; margin-left:10%;margin-right:0px;order:0;}
+      }
       #list h2{padding:5px;padding-left:10px;color: #232323;background: #fff8e8;border-left: solid 10px #ffc06e;}
       #list h3{padding-left:10px;border-bottom: solid 2px #ffc06e;}
       #list h4{padding-left:10px;}
@@ -47,127 +53,14 @@
     <div id="newtopic">
       <h1>更新記事</h1>
     </div>
+    <div id="main">
+    <div id="select" >
+      <p>select<br>heifnc<br>njekfc<br>njwkd</p>
+    </div>
     <div id="list">
     <h1>本章</h1>
     <p>ここではスマートホームについて日本一詳しくまとめてみました。<br>順にブログで一つ一つ紹介していきますが、見たい記事がある方はタイトル下の記事申請からどうぞ。<br>量や質を重視している為、日本語やデザインに関してはご勘弁を…</p>
     <h2>目次</h2>
-    <ul id="mokuji">
-      <li>スマートホームとは
-        <ul>
-          <li>導入するメリット・デメリット</li>
-          <li>実用的なスマートホーム機器を集めてみた</li>
-          <li>実際に利用する際の具体例</li>
-          <li>日本国内におけるスマートホームの課題</li>
-        </ul>
-      </li>
-      <li>電気
-        <ul>
-          <li>hue
-            <ul>
-              <li>導入のメリット・デメリット</li>
-              <li>使用シーンの紹介</li>
-              <li>オプションの便利さを知る</li>
-              <li>今後の課題</li>
-            </ul>
-          </li>
-          <li>センサーライト
-            <ul>
-              <li>導入のメリット・デメリット</li>
-              <li>選び方・気をつけるポイント</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>鍵
-        <ul>
-          <li>スマートロックとは？</li>
-          <li>導入のメリット・デメリット</li>
-          <li>SESAME</li>
-          <li>Qrio Lock</li>
-        </ul>
-      </li>
-      <li>コンセント
-        <ul>
-          <li>導入のメリット・デメリット</li>
-          <li>活用方法</li>
-          <li>スマートプラグの違い、選び方</li>
-        </ul>
-      </li>
-      <li>赤外線リモコン
-        <ul>
-          <li>赤外線リモコンとは</li>
-          <li>活用方法</li>
-          <li>赤外線リモコンの違い・選び方</li>
-          <li>Nature remo
-            <ul>
-              <li>出来る事、できない事</li>
-              <li>活用方法</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>スピーカー
-        <ul>
-          <li>スマートスピーカーの実生活での活用方法</li>
-            <ul>
-              <li>スマートスピーカーが出来る事</li>
-              <li>生活の中で実際に使う機能</li>
-            </ul>
-          <li>なぜ日本での利用者が少ないのか</li>
-          <li>様々なスマートスピーカーの違い・選び方</li>
-          <li>Google Home
-            <ul>
-              <li>出来る事、できない事</li>
-              <li>活用方法</li>
-            </ul>
-          </li>
-          <li>Amazon Echo
-            <ul>
-              <li>出来る事、できない事</li>
-              <li>活用方法</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>テレビ
-        <ul>
-          <li>GoogleChromeCast
-            <ul>
-              <li>導入のメリット・デメリット</li>
-            </ul>
-          </li>
-          <li>AppleTv
-            <ul>
-              <li>導入のメリットデメリット</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>IFTTT
-        <ul>
-          <li>IFTTTとは</li>
-          <li>活用方法</li>
-          <li>スマートホームに導入する際の具体例</li>
-          <li>あんな事にもこんな事にも使えるIFTTT</li>
-        </ul>
-      </li>
-      <li>Amazon Dush Button
-        <ul>
-          <li>AmazonDushButtonとは
-            <ul>
-              <li>導入のメリット•デメリット</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>ラズベリーパイ
-        <ul>
-          <li>ラズベリーパイとは？</li>
-          <li>なぜラズベリーパイが必要なのか</li>
-          <li>導入する際の運用方法</li>
-        </ul>
-      </li>
-    </ul>
    <h2>スマートホームとは</h2>
       <p>一般的にスマートホームとは、家電製品がインターネットに繋がり、音声やスマートフォン等で操作ができ自動でコントロールしてくれる家のことです。<br><br>しかし、家電製品がインターネットに繋がる事が大切なのではありません。 <br>インターネットに繋がるのは、目的ではなく手段です。 <br><br>私の考えるスマートホームとは、操作をしなくても家電の適したコントロールを行い、<b>快適な生活をおくれる家のこと</b>です。</p>
     <ul>
@@ -246,5 +139,6 @@
       <h3>なぜラズベリーパイが必要なのか</h3>
       <h3>導入する際の運用方法</h3>
     </div>
+</div>
   </body>
 </html>
