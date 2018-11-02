@@ -9,7 +9,8 @@ body{
 }
 #navi{
     background-color:#ffffff;
-    width:100%;height:50px;
+    width:100%;
+    height:50px;
     top:0px;
     position:fixed;
     box-shadow:0px 5px 10px gray;
@@ -30,10 +31,11 @@ body{
     font-weight: bold;
 }
 #top{
-    height:85%;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top:60px;
+    height:calc(100% - 90px);
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    margin-top:70px;
     background-color:#222222;
     box-shadow:0px 2px 4px gray;
     border-radius: 200px;
@@ -121,6 +123,7 @@ body{
     margin:2%;
     padding:0px;
     flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
 }
 #right ul li{
@@ -128,39 +131,44 @@ body{
     width:125px;
     height:40px;
 }
-@media screen and (max-width: 950px){
+/*@media screen and (max-width: 950px){
     #right ul li{
         margin:5px;
         width:40%;
         height:40px;
     }
-}
+}*/
 #right ul li a{
-    width:100%;
-    height:100%;
-    background: #f5f5f5;
-    font-size:80%;
-    color:#000000;
-    border-bottom: solid 4px #dcdcdc;
-    line-height:100%;
     text-decoration: none;
     display:flex;
-    align-items: center;
+    color:#000000;
+    width:100%;
+    height:100%;
+    line-height:100%;
+    font-size:80%;
+    background: #f5f5f5;
+    border-bottom: solid 4px #dcdcdc;
 }
 #right ul li a i{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width:40px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    font-size:35px;
+    height:100%;
+    line-height:100%;
+    font-size:20px;
     background:#00fa9a;
     border-bottom: solid 4px #3cb371;
 }
 #right ul li a:hover{
-    background: #00bfff;
+    background: #dcdcdc;
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
+    border-bottom:none;
+}
+#right ul li a:hover i{
+    background: #3cb371;
     border-bottom:none;
 }
 #left h2{
