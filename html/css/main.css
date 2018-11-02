@@ -7,26 +7,31 @@ body{
     height:100%;
     margin:0px;
 }
-#header{
+#navi{
     background-color:#ffffff;
     width:100%;height:50px;
     top:0px;
     position:fixed;
     box-shadow:0px 5px 10px gray;
 }
-#header ul{
-    text-align:right;
+#navi ul{
     height:100%;
-    font-size:200%;
-    margin:0px;
+    margin:auto;
+    list-style: none;
+    overflow: hidden;
 }
-#header ul li{
-    text-align:right;
-    height:100%;
-    display:inline;
-    margin-up:auto;
-    margin-right:20px;
-    height:100%;
+#navi ul li{
+    float:left;
+    border-right: 1px solid #DDD;
+}
+#navi ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size:125%;
+    font-weight: bold;
 }
 #top{
     height:85%;
@@ -44,19 +49,19 @@ body{
 }
 @media screen and (min-width: 480px){
     #top{
-        border-radius: 100px;
+        border-radius: 30px;
     }
 }
 @media screen and (min-width: 768px){
     #top{
-        border-radius: 200px;
+        border-radius: 50px;
     }
 }
 #top #title{
     padding:10%;
 }
 #top h1{
-    font-size:300%;
+    font-size:250%;
     margin:0px;
 }
 #top p{
@@ -65,9 +70,8 @@ body{
 }
 #newtopic{
     margin:5%;
-    height:550px;
     height:150px;
-    background-color:#ffffff;
+    background: #f2f2f2;
     padding:10px;
     margin-top:10px;
     box-shadow:0px 2px 4px gray;
@@ -84,51 +88,75 @@ body{
         justify-content: center;
     }
 }
-#select{
-    height:100px;
+#right{
+    height:100%;
     border:solid 5px #cccccc;
+    border-radius: 20px;
 }
 @media screen and (max-width: 480px){
-    #select{
+    #right{
         width:90%;
-        border:solid 5px #cccccc;
     }
-    #list{
+    #left{
         width:90%;
     }
 }
 @media screen and (min-width: 480px){
-    #select{
-        position: -webkit-sticky;
-        position: sticky;
-        top:20%;
+    #right{
         width:30%;
-        justify-content: center;
+        position:-webkit-sticky;
+        position:sticky;
+        top:10%;
+        justify-content:center;
         order:1;
         margin-left:5%;
     }
-    #list{
+    #left{
         width:50%; 
         margin-left:10%;
-        margin-right:0px;
         order:0;
     }
 }
-#list h2{
+#right h2{
+    text-align:center;
+}
+#right ul{
+    display:flex;
+    margin:2%;
+    padding:0px;
+    flex-wrap: wrap;
+}
+#right ul li{
+    height:50px;
+    width:50%;
+    background: #dddddd;
+}
+#right ul li button{
+    height:40px;
+    width:90%;
+    margin:5%;
+}
+#left h2{
     padding:5px;
     padding-left:10px;
     color: #232323;
     background: #fff8e8;
     border-left: solid 10px #ffc06e;
 }
-#list h3{
+#left h3{
     padding:10px;
     border-bottom: solid 2px #ffc06e;
 }
-#list h4{
+#left h4{
     padding-left:10px;
 }
-#list p{
+main p{
+    font-size:80%;
     margin-left:10px;
     line-height:200%;
+}
+@media screen and (min-width: 480px){
+    main p{
+        font-size:100%;
+    }
 }
