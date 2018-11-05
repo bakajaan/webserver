@@ -101,16 +101,16 @@ body{
         width:100%;
     }
     #newtopic{
-        width:80%;
+        width:100%;
     }
     #main{
-        width:80%;
+        width:100%;
     }
     #side{
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between ;
-        width:80%;
+        width:100%;
     }
 }
 @media screen and (max-width: 600px){
@@ -123,6 +123,9 @@ body{
     #side{
         justify-content:center;
     }
+}
+#topic ul{
+    margin:0px;
 }
 #item h2{
     text-align:center;
