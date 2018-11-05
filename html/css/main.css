@@ -187,8 +187,8 @@ body{
 }
 main p{
     font-size:80%;
+    margin:10px;
     margin-left:10px;
-    line-height:200%;
 }
 @media screen and (min-width: 480px){
     main p{
