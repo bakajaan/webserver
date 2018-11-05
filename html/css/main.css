@@ -67,6 +67,14 @@ body{
     padding-top:5%;
     font-size:150%;
 }
+.maintenance{
+    /*display:none;*/
+    /*↑メンテナンス時コメント化*/
+    font-size: 150%;
+    font-weight: bolder;
+    background:yellow;
+    text-align: center;
+}
 #newtopic{
     margin:5%;
     height:150px;
