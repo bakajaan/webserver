@@ -19,7 +19,7 @@ body{
     height:calc(100% - 90px);
     margin:20px;
     background-color:#222222;
-    box-shadow:0px 2px 4px gray;
+    box-shadow:3px 3px 3px gray;
     border-radius: 200px;
     color:white;
 }
@@ -70,50 +70,58 @@ body{
 }
 #newtopic{
     width:1000px;
+    padding:0px;
     height:150px;
     background: #f2f2f2;
-    padding:10px;
-    box-shadow:0px 2px 4px gray;
+    box-shadow:2px 2px 4px gray;
 }
 #newtopic h1{
     font-size:100%
 }
 #main{
+    background:#ffffff;
+    box-shadow:2px 2px 4px gray;
     width:700px;
 }
 #side{
     width:300px;
 }
 #side #topic{
-    background:#fffaf0;
+    background:#ffffff;
+    box-shadow:2px 2px 4px gray;
     width:300px;
 }
 #side #item{
-    background:#fffaf0;
+    background:#ffffff;
+    box-shadow:0px 2px 4px gray;
     width:300px;
 }
 @media screen and (max-width: 1000px){
     #content{
         width:100%;
     }
+    #newtopic{
+        width:80%;
+    }
     #main{
-        width:100%;
+        width:80%;
     }
     #side{
         display:flex;
-        width:100%;
+        flex-wrap: wrap;
+        justify-content: space-between ;
+        width:80%;
     }
 }
 @media screen and (max-width: 600px){
-    #side{
-        display:block;
-        width:100%;
-    }
     #topic{
         width:100%;
     }
     #item{
         width:100%;
+    }
+    #side{
+        justify-content:center;
     }
 }
 #item h2{
