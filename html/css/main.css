@@ -60,7 +60,7 @@ body{
     bottom:0px;
     border-top: solid 4px black;
     border-left: solid 4px black;
-    background:radial-gradient(farthest-corner circle at center 20%, #ffff00 0, #F99292 100%);
+    background:radial-gradient(farthest-side circle at center 20%, #ffff00 0, #F99292 100%);
     box-shadow:-10px -5px 3px #F99292;
 }
 #hide{
