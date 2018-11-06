@@ -72,9 +72,9 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-/*#content p{
-    color:#FFBC61;
-}*/
+#content p{
+    color:#4c4c4c;
+}
 #newtopic{
     width:100%;
     padding:0px;
@@ -84,11 +84,12 @@ body{
     box-shadow:2px 2px 4px gray;
 }
 #newtopic h1{
+    color:white;
     font-size:100%
 }
 #main{
     padding:20px;
-    background:#ffffff;
+    /*background:#ffffff;*/
     margin-bottom:20px;
     width:70%;
     box-sizing:border-box;
@@ -101,6 +102,11 @@ body{
     margin-bottom:20px;
     background:#ffffff;
     width:300px;
+}
+#side #topic h1{
+    width:100%;
+    margin:0px;
+    background:#ffc679;
 }
 #side #item{
     margin-bottom:20px;
@@ -120,7 +126,7 @@ body{
     #side{
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-between ;
+        justify-content: center;
         width:100%;
     }
 }
@@ -130,9 +136,6 @@ body{
     }
     #item{
         width:100%;
-    }
-    #side{
-        justify-content:center;
     }
 }
 #topic ul{
@@ -198,13 +201,10 @@ body{
     padding:5px;
     padding-left:10px;
     border-bottom:solid 4px #F99292;
-    /*color: #232323;
-    background: #fff8e8;
-    border-left: solid 10px #ffc06e;*/
 }
 #main h3{
-    padding:10px;
-    border-bottom: solid 2px #F99292;
+    padding:5px;
+    border-left: solid 4px #F99292;
 }
 #main h4{
     padding-left:10px;
