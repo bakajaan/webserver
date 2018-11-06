@@ -1,29 +1,36 @@
 
-html{
-    height:100%;
-}
-body{
-    font-family:"ＭＳ Ｐゴシック",sans-serif;
-    background:#FFF4E0;
-    height:100%;
+*{
+    padding:0px;
     margin:0px;
 }
+h1,h2,h3,h4,p{
+    color:#4c4c4c;
+}
+html{
+    height:100%;
+    width:100%;
+    background:#FFF4E0;
+    font-family:"ＭＳ Ｐゴシック",sans-serif;
+}
+body{
+    height:100%;
+    width:100%;
+}
 #header{
-    background-color:#FFC679;
-    color:white;
+    width:100%;
+    height:50px;
     font-size:30px;
     line-height:50px;
     text-align: center;
-    width:100%;
-    height:50px;
+    background:#ffc679;
+    color:#ffffff;
 }
 #top{
     height:calc(100% - 90px);
     margin:20px;
-    background-color:#FFBC61;
     box-shadow:3px 3px 3px gray;
-    border-radius: 200px;
-    color:white;
+    background:#ffbc61;
+    color:#ffffff;
 }
 @media screen and (max-width: 480px){
     #top{
@@ -44,26 +51,27 @@ body{
     padding:10%;
 }
 #top h1{
-    text-shadow: 3px 3px 1px #F99292;
     font-size:250%;
-    margin:0px;
+    color:#ffffff;
+    text-shadow: 3px 3px 1px #f99292;
 }
 #top p{
-    color: rgba(255, 255, 255, 0.7);
     padding-top:5%;
     font-size:150%;
+    color: rgba(255, 255, 255, 0.7);
 }
 .maintenance{
     /*display:none;*/
     /*↑メンテナンス時コメント化*/
     font-size: 150%;
     font-weight: bolder;
-    background:yellow;
     text-align: center;
+    background:yellow;
 }
 #width{
     width:100%;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 #content{
@@ -73,45 +81,41 @@ body{
     justify-content: center;
 }
 #content p{
+    margin:10px;
     color:#4c4c4c;
 }
 #newtopic{
     width:100%;
-    padding:0px;
+    padding:20px;
     height:150px;
     margin-bottom:20px;
-    background: #FFC679;
+    background: #ffc679;
     box-shadow:2px 2px 4px gray;
 }
 #newtopic h1{
-    color:white;
     font-size:100%
+    color:#ffffff;
 }
 #main{
-    padding:20px;
-    /*background:#ffffff;*/
-    margin-bottom:20px;
     width:70%;
-    box-sizing:border-box;
 }
 #side{
-    margin-bottom:20px;
     width:30%;
+    margin-bottom:20px;
 }
 #side #topic{
+    width:300px;
     margin-bottom:20px;
     background:#ffffff;
-    width:300px;
 }
 #side #topic h1{
     width:100%;
-    margin:0px;
     background:#ffc679;
 }
 #side #item{
+    width:300px;
     margin-bottom:20px;
     background:#ffffff;
-    width:300px;
 }
 @media screen and (max-width: 1000px){
     #content{
@@ -124,10 +128,16 @@ body{
         width:100%;
     }
     #side{
+        width:100%;
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
-        width:100%;
+    }
+    #topic{
+        margin:20px;
+    }
+    #item{
+        margin:20px;
     }
 }
 @media screen and (max-width: 600px){
@@ -138,51 +148,40 @@ body{
         width:100%;
     }
 }
-#topic ul{
-    margin:0px;
-}
 #item h2{
     text-align:center;
 }
 #item ul{
     display:flex;
     margin:2%;
-    padding:0px;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
 #item ul li{
-    margin:5px;
     width:125px;
     height:40px;
+    margin:5px;
 }
-/*@media screen and (max-width: 950px){
-    #right ul li{
-        margin:5px;
-        width:40%;
-        height:40px;
-    }
-}*/
 #item ul li a{
-    text-decoration: none;
-    display:flex;
-    color:#000000;
     width:100%;
     height:100%;
     line-height:100%;
     font-size:12px;
+    text-decoration: none;
+    display:flex;
+    color:#000000;
     background: #f5f5f5;
     border-bottom: solid 4px #dcdcdc;
 }
 #item ul li a i{
-    display:flex;
-    align-items: center;
-    justify-content: center;
     width:40px;
     height:100%;
     line-height:100%;
     font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background:#00fa9a;
     border-bottom: solid 4px #3cb371;
 }
@@ -212,7 +211,6 @@ body{
 main p{
     font-size:80%;
     margin:10px;
-    margin-left:10px;
 }
 @media screen and (min-width: 480px){
     main p{
