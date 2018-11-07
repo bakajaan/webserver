@@ -9,3 +9,8 @@ $(function(){
         $("#hide").animate({ opacity: '0'},1000);
     },1500);
 });
+$(function(){
+    setTimeout(function(){
+        $("#door").animate({ width: '50px',left: '-50px'},1000);
+    },1500);
+});
