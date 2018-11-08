@@ -167,9 +167,15 @@ body{
 #main h2{
     padding:5px;
     padding-left:10px;
-    border-bottom:solid 4px #F99292;
+    border-left:solid 4px #F99292;
+    background:#ffc679;
+    width:200px;
 }
 #main h3{
+    padding-left:10px;
+    border-bottom:solid 2px #F99292;
+}
+#main h4{
     padding-left:10px;
 }
 main p{
