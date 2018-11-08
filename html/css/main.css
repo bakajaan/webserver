@@ -44,10 +44,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-#content p{
-    margin:20px;
-    color:#4c4c4c;
-}
 #main{
     width:70%;
 }
@@ -165,21 +161,25 @@ body{
     border-bottom:none;
 }
 #main h2{
-    padding:5px;
+    margin:10px;
     padding-left:10px;
-    border-left:solid 4px #F99292;
-    background:#ffc679;
-    width:200px;
+    border-left:solid 8px #F99292;
+    border-bottom:solid 4px #F99292;
 }
 #main h3{
-    padding-left:10px;
+    margin:10px;
+    padding-left:18px;
+    font-size:140%;
     border-bottom:solid 2px #F99292;
 }
 #main h4{
+    margin:10px;
     padding-left:10px;
+    font-size:120%;
+    border-left:solid 8px #FFC679;
 }
-main p{
-    font-size:80%;
+#main p{
+    /*font-size:120%;*/
     margin:10px;
 }
 @media screen and (min-width: 480px){
