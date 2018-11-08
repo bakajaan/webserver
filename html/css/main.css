@@ -1,4 +1,3 @@
-//共通項目
 *{
     padding:0px;
     margin:0px;
@@ -16,8 +15,6 @@ body{
     height:100%;
     width:100%;
 }
-
-//ヘッダー
 #header{
     width:100%;
     height:50px;
@@ -27,8 +24,6 @@ body{
     background:#ffc679;
     color:#ffffff;
 }
-
-//メンテナンス表示
 .maintenance{
     /*display:none;*/
     /*↑メンテナンス時コメント化*/
@@ -37,8 +32,6 @@ body{
     text-align: center;
     background:yellow;
 }
-
-//コンテンツ
 #width{
     width:100%;
     display:flex;
