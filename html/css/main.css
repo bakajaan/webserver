@@ -1,3 +1,4 @@
+//共通項目
 *{
     padding:0px;
     margin:0px;
@@ -15,6 +16,8 @@ body{
     height:100%;
     width:100%;
 }
+
+//ヘッダー
 #header{
     width:100%;
     height:50px;
@@ -24,109 +27,8 @@ body{
     background:#ffc679;
     color:#ffffff;
 }
-#top{
-    height:calc(100% - 90px);
-    margin:20px;
-    position:relative;
-    box-shadow:3px 3px 3px gray;
-    background:#ffbc61;
-    color:#ffffff;
-}
-@media screen and (max-width: 480px){
-    #top{
-        border-radius: 20px;
-    }
-    #hide,#home{
-        border-radius: 0px 0px 20px 0px;
-    }
-}
-@media screen and (min-width: 480px){
-    #top{
-        border-radius: 30px;
-    }
-    #hide,#home{
-        border-radius: 0px 0px 30px 0px;
-    }
-}
-@media screen and (min-width: 768px){
-    #top{
-        border-radius: 50px;
-    }
-    #hide,#home{
-        border-radius: 0px 0px 50px 0px;
-    }
-}
-#user{
-    position:absolute;
-    height:10%;
-    top:80%;
-}
-#home{
-    position:absolute;
-    width:40%;
-    height:50%;
-    right:0px;
-    bottom:0px;
-    border-top: solid 4px black;
-    border-left: solid 4px black;
-    background:radial-gradient(farthest-side circle at center 20%, #ffff00 0, #696969 100%);
-    /*box-shadow:-10px -5px 3px #F99292;*/
-}
-#hide{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:#696969;
-    opacity:1.0;
-}
-#light{
-    content: "";
-    display:block;
-    position: absolute;
-    width:0%;
-    height:10%;
-    top:0px;
-    left:calc(50% - 5px);
-    border-left: solid 10px gray;
-}
-#light:after{
-    content: "";
-    display:block;
-    position: absolute;
-    height:30px;
-    width:60px;
-    top:100%;
-    left:-35px;
-    border-top:solid 30px gray;
-    border-radius:30px 30px 0px 0px;
-}
-#door{
-    content: "";
-    position: absolute;
-    height:40%;
-    width:0px;
-    top:calc(60% - 8px);
-    left:0px;
-    margin-left:-8px;
-    border:solid 4px gray;
-    border-right:none;
-    /*transform:skewY(15deg);*/
-    background:#696969;
-}
-#top #title{
-    position: absolute;
-    padding:10%;
-}
-#top h1{
-    font-size:250%;
-    color:#ffffff;
-    text-shadow: 3px 3px 1px #f99292;
-}
-#top p{
-    padding-top:5%;
-    font-size:150%;
-    color: rgba(255, 255, 255, 0.7);
-}
+
+//メンテナンス表示
 .maintenance{
     /*display:none;*/
     /*↑メンテナンス時コメント化*/
@@ -135,6 +37,8 @@ body{
     text-align: center;
     background:yellow;
 }
+
+//コンテンツ
 #width{
     width:100%;
     display:flex;
@@ -148,20 +52,8 @@ body{
     justify-content: center;
 }
 #content p{
-    margin:10px;
+    margin:20px;
     color:#4c4c4c;
-}
-#newtopic{
-    width:100%;
-    padding:20px;
-    height:150px;
-    margin-bottom:20px;
-    background: #ffc679;
-    box-shadow:2px 2px 4px gray;
-}
-#newtopic h1{
-    font-size:100%;
-    color:#ffffff;
 }
 #main{
     width:70%;
@@ -283,12 +175,9 @@ body{
     padding:5px;
     padding-left:10px;
     border-bottom:solid 4px #F99292;
+    /*background:#FFC679;*/
 }
 #main h3{
-    padding:5px;
-    border-left: solid 4px #F99292;
-}
-#main h4{
     padding-left:10px;
 }
 main p{
