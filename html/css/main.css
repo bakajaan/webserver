@@ -25,7 +25,7 @@ body{
     color:#ffffff;
 }
 .maintenance{
-    /*display:none;*/
+    display:none;
     /*↑メンテナンス時コメント化*/
     font-size: 150%;
     font-weight: bolder;
@@ -48,6 +48,7 @@ body{
     width:70%;
 }
 #side{
+    margin-top:30px;
     width:30%;
     margin-bottom:20px;
 }
@@ -58,6 +59,8 @@ body{
 }
 #side #topic h1{
     width:100%;
+    text-aligne:center;
+    font-size:130%;
     background:#ffc679;
 }
 #side #item{
@@ -183,6 +186,8 @@ body{
 #main p{
     /*font-size:120%;*/
     margin:10px;
+    margin-top:30px;
+    margin-bottom:30px;
 }
 @media screen and (min-width: 480px){
     main p{
