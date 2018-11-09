@@ -2,18 +2,18 @@
     padding:0px;
     margin:0px;
 }
-h1,h2,h3,h4,p,ul li{
+h1,h2,h3,h4,p,ul li,a{
     color:#4c4c4c;
 }
 html{
     height:100%;
     width:100%;
-    background:#FFF4E0;
     font-family:"ＭＳ Ｐゴシック",sans-serif;
 }
 body{
     height:100%;
     width:100%;
+    background:#FFF4E0;
 }
 #header{
     width:100%;
@@ -59,7 +59,7 @@ body{
 }
 #side #topic h1{
     width:100%;
-    text-aligne:center;
+    text-align: center;
     font-size:130%;
     background:#ffc679;
 }
