@@ -40,7 +40,7 @@ body{
     justify-content: center;
 }
 #content{
-    width:100%;
+    width:90%;
     display:flex;
     margin-top:20px;
     flex-wrap: wrap;
