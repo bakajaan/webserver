@@ -2,17 +2,18 @@
     padding:0px;
     margin:0px;
 }
-h1,h2,h3,h4,p,ul li,a{
+h1,h2,h3,h4,p,li,a{
     color:#4c4c4c;
 }
 html{
     height:100%;
     width:100%;
-    font-family:"ＭＳ Ｐゴシック",sans-serif;
 }
 body{
+    line-height:150%;
     height:100%;
     width:100%;
+    font-family:"ＭＳ Ｐゴシック",sans-serif;
     background:#FFF4E0;
 }
 #header{
@@ -32,27 +33,57 @@ body{
     text-align: center;
     background:yellow;
 }
-#width{
+#page{
     width:100%;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 #content{
-    width:1000px;
+    width:100%;
     display:flex;
     margin-top:20px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 #main{
-    width:70%;
+    width:100%;
 }
+#main h2{
+    margin:10px;
+    /*margin-top:50px;*/
+    padding-left:10px;
+    border-left:solid 8px #F99292;
+    border-bottom:solid 4px #F99292;
+}
+#main h3{
+    margin:10px;
+    /*margin-top:30px;*/
+    padding-left:18px;
+    font-size:140%;
+    border-bottom:solid 2px #F99292;
+}
+#main h4{
+    margin:10px;
+    padding-left:10px;
+    font-size:120%;
+    border-left:solid 8px #FFC679;
+}
+#main p{
+    margin:10px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
 #side{
-    width:30%;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #side #topic{
-    width:300px;
+    width:100%;
     margin-bottom:20px;
     background:#ffffff;
 }
@@ -63,42 +94,9 @@ body{
     background:#ffc679;
 }
 #side #item{
-    width:300px;
+    width:100%;
     margin-bottom:20px;
     background:#ffffff;
-}
-@media screen and (max-width: 1000px){
-    #content{
-        width:90%;
-    }
-    #newtopic{
-        width:100%;
-    }
-    #main{
-        width:100%;
-    }
-    #side{
-        width:100%;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    #topic{
-        margin:20px;
-    }
-    #item{
-        margin:20px;
-    }
-}
-@media screen and (max-width: 600px){
-    #topic{
-        width:100%;
-        margin:0px;
-    }
-    #item{
-        width:100%;
-        margin:0px;
-    }
 }
 #topic a{
     color:#4c4c4c;
@@ -162,33 +160,29 @@ body{
     background: #3cb371;
     border-bottom:none;
 }
-#main h2{
-    margin:10px;
-    /*margin-top:50px;*/
-    padding-left:10px;
-    border-left:solid 8px #F99292;
-    border-bottom:solid 4px #F99292;
-}
-#main h3{
-    margin:10px;
-    /*margin-top:30px;*/
-    padding-left:18px;
-    font-size:140%;
-    border-bottom:solid 2px #F99292;
-}
-#main h4{
-    margin:10px;
-    padding-left:10px;
-    font-size:120%;
-    border-left:solid 8px #FFC679;
-}
-#main p{
-    margin:10px;
-    margin-top:20px;
-    margin-bottom:30px;
-}
-@media screen and (min-width: 480px){
-    main p{
-        font-size:100%;
+
+/*ipad縦、iphone7/6plus横*/
+/*@media screen and (min-width:480px){
+    #main{
+        width:70%;
     }
+    #side{
+        width:30%;
+    }
+}*/
+
+/*PC、タブレット横*/
+@media screen and (min-width:768px){
+    #main{
+        width:70%;
+        padding:0%;
+    }
+    #side{
+        width:30%;
+        padding:0%;
+    }
+}
+
+/*PC*/
+@media screen and (min-width:920px){
 }

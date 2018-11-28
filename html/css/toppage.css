@@ -31,11 +31,13 @@
     }
 }
 #user{
+    opacity:0.5;
     position:absolute;
     height:10%;
     top:80%;
 }
 #home{
+    opacity:0.5;
     position:absolute;
     width:40%;
     height:50%;
@@ -90,6 +92,7 @@
     padding:10%;
 }
 #title h1{
+    line-height:150%;
     font-size:250%;
     color:#ffffff;
     text-shadow: 3px 3px 1px #f99292;
