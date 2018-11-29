@@ -10,9 +10,9 @@ html{
     width:100%;
 }
 body{
-    line-height:150%;
     height:100%;
     width:100%;
+    line-height:150%;
     font-family:"ＭＳ Ｐゴシック",sans-serif;
     background:#FFF4E0;
 }
@@ -50,19 +50,25 @@ body{
 #main{
     width:100%;
 }
+#main #title{
+    width:100%;
+    height:100px;
+    background:White;
+}
+#main h1{
+}
 #main h2{
     margin:10px;
-    /*margin-top:50px;*/
     padding-left:10px;
-    border-left:solid 8px #F99292;
-    border-bottom:solid 4px #F99292;
+    line-height:200%;
+    border-bottom:solid 2px #F99292;
 }
 #main h3{
     margin:10px;
-    /*margin-top:30px;*/
     padding-left:18px;
-    font-size:140%;
-    border-bottom:solid 2px #F99292;
+    /*font-size:140%;*/
+    line-height:200%;
+    border-bottom:solid 1px #F99292;
 }
 #main h4{
     margin:10px;
@@ -82,21 +88,18 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-#side #topic{
+
+#topic{
     width:100%;
+    margin:2%;
     margin-bottom:20px;
     background:#ffffff;
 }
-#side #topic h1{
+#topic h1{
     width:100%;
     text-align: center;
     font-size:130%;
     background:#ffc679;
-}
-#side #item{
-    width:100%;
-    margin-bottom:20px;
-    background:#ffffff;
 }
 #topic a{
     color:#4c4c4c;
@@ -111,6 +114,13 @@ body{
 }
 #topic ul li ul li{
     color:#F99292;
+}
+
+#item{
+    width:300px;
+    margin:2%;
+    margin-bottom:20px;
+    background:#ffffff;
 }
 #item h2{
     text-align:center;
@@ -162,7 +172,27 @@ body{
 }
 
 /*ipad縦、iphone7/6plus横*/
-/*@media screen and (min-width:480px){
+@media screen and (min-width:480px){
+    #item{
+        height:300px;
+    }
+}
+
+/*PC、タブレット横*/
+@media screen and (min-width:768px){
+    #topic{
+        width:calc(92% - 300px);
+    }
+    #item{
+        width:300px;
+    }
+}
+
+/*PC*/
+/*@media screen and (min-width:920px){
+    #content{
+        width:900px;
+    }
     #main{
         width:70%;
     }
@@ -171,18 +201,21 @@ body{
     }
 }*/
 
-/*PC、タブレット横*/
-@media screen and (min-width:768px){
+/*PC*/
+@media screen and (min-width:1000px){
+    #content{
+        width:1000px;
+    }
     #main{
         width:70%;
-        padding:0%;
     }
     #side{
         width:30%;
-        padding:0%;
     }
-}
-
-/*PC*/
-@media screen and (min-width:920px){
+    #topic{
+        width:100%;
+    }
+    #item{
+        width:100%;
+    }
 }
